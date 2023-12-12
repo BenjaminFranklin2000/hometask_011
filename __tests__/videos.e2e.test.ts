@@ -6,6 +6,7 @@ describe('Videos e2e tests', ()=> {
     let video_1: VideoType;
 
     beforeAll(async () => {
+        
         const response = await request(app)
             .delete('/testing/all-data')
             .expect(204)
